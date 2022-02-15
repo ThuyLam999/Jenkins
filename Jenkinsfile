@@ -1,6 +1,6 @@
 node { 
     stage ('Checkout SCM') { 
-        git branch: "main", url: ''
+        git branch: "main", url: 'https://github.com/ThuyLam999/Jenkins.git'
     }
     stage ('Install node modules') { 
         sh "npm install"
